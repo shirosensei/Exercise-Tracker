@@ -1,0 +1,68 @@
+@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css");
+
+.slideshow-container {
+    position: relative;
+    height: 500px;
+    width: 100%;
+  }
+  
+  .slideshow-image {
+    background-position: center;
+    background-size: cover;
+    animation: fade 10s infinite;
+  }
+  
+  .slideshow-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+  }
+  
+  @keyframes fade {
+    0% { opacity: 0; }
+    20% { opacity: 1; }
+    33.33% { opacity: 1; }
+    53.33% { opacity: 0; }
+    100% { opacity: 0; }
+  }
+
+  
+/* Your custom CSS code here */
+
+.slideshow-container {
+  position: relative;
+  height: 500px;
+  width: 100%;
+}
+
+.slideshow-image {
+  background-position: center;
+  background-size: cover;
+  animation: fade 10s infinite;
+}
+
+.slideshow-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
+
+@keyframes fade {
+  0% { opacity: 0; }
+  20% { opacity: 1; }
+  33.33% { opacity: 1; }
+  53.33% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+/* Your remaining custom CSS code */
