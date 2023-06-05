@@ -62,77 +62,69 @@ body {
   padding: 0;
   font-family: Arial, sans-serif;
   overflow-x: hidden; /* Prevent horizontal scrolling */
+  position: relative;
 }
 
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #000;
-  padding: 15px;
 
-}
-
-header h1 {
+ h1 {
   font-size: 1.2em;
   margin: 0;
   color: #fff;
   
 }
 
-header nav {
+nav {
   display: flex;
   align-items: center;
   flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000;
+  padding: 15px;
+  gap: 50px;
   }
-  header nav ul {
+
+   nav ul {
+    display: flex;
+    align-items: center;
   list-style-type: none;
+  gap: 20px;
 }
-header nav ul li {
-  display: inline-block;
+  li {
   margin: 0 5px;
+  width: 70px;
   }
-  header nav ul li a {
+    li a {
     text-decoration: none;
     color: #FFFEC4;
-    font-size: 1em;
+    font-size: 1.1rem;
+    cursor: pointer;
     }
 
-    .hamburger {
-      display: none;
+    li a:hover {
+      color: #f1c40f;
+      border-bottom: 4px #f1c40f solid;
+      transition: 0.5s;
     }
 
 
-    @media screen and (min-width: 320px) and (min-width: 768px){
+
+    .hide {
+      top: 70px;
+      list-style: none;
+      line-height: 40px;
+      text-align: center;
+    }
+
+
+    @media screen and (min-width: 320px) and (max-width: 768px){
      
-      header h1 {
-        display: block;
+      h1 {
+        display: inline-flex;
+        font-size: 1.5rem;
       }
      
-      nav {
-        position: relative;
-        padding: 15px 20px;
-      }
-
-      nav ul {
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        background-color: #f1c40f;
-        padding: 35px 0;
-        position: absolute;
-        top: -300;
-        left: 0;
-        right: 0; 
-      }
-
-      nav ul li {
-        text-align: center;
-        width: 90vw;
-
-      }
-
+      
       .hamburger {
         display: flex;
         flex-direction: column;
@@ -150,10 +142,39 @@ header nav ul li {
       }
 
       .line-rotate {
-        background-color: #fff;
+        background-color: #362d2d;
         border-radius: 5px;
       }
 
+      nav {
+        position: relative;
+        padding: 35px 20px;
+      }
+
+       ul {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #0c0c0c;
+        padding: 35px 0;
+        position: absolute;
+        top: -350px;
+        left: 0;
+        right: 0; 
+      }
+
+      li {
+        text-align: center;
+        width: 50vw;
+      }
+      li a:hover {
+        font-weight: bold;
+        color: #f1c40f;
+        border: none;
+        letter-spacing: 3px;
+      }
+     
     
     }
 
